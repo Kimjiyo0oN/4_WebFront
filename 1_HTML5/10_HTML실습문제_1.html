@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_실습문제1</title>
+</head>
+<body>
+    <form action="#">
+        <div>
+            <label for="고객명">고객명 :</label>
+            <input type="name" name="고객명" id="고객명"><br><br>
+
+            <label for="전화번호">전화번호 :</label>
+            <input type="tel" name="전화번호" id="전화번호"><br><br>
+
+            <label for="E-mail">E-mail :</label>
+            <input type="email" name="E-mail" id="E-mail"><br><br>
+
+        </div>
+
+        
+        <label for="피자선택">피자선택 :</label>
+        <select name="피자선택" id="피자선택"><!-- <select name="food">: kry 담당 -->
+                <!-- option value 담당 -->
+            <option value='' selected>피자를 선택하세요</option>
+            <option value ="파인애플피자">파인애플피자</option><!-- ?food=a# -->
+            <option value ="포테이포피자">포테이포피자</option>
+            <option value ="고구마피자">고구마피자</option>
+        </select>
+            <!-- 
+                option 태그 value 미작성 시 : option태그의 내용(시작, 종료 태그 사이 값)
+                option 태그 value 작성 시 : value에 작성된 값 제출
+            -->
+        
+        <fieldset>
+            <legend>피자 사이즈</legend>
+            <input type ="radio" name="size" value="Small" id="Small">
+            <label for="Small">Small</label> <br><br>
+            <input type ="radio" name="size" value="Medium" id="Medium">
+            <label for="Medium">Medium</label><br><br>
+            <input type ="radio" name="size" value="Large" id="Large"> 
+            <label for="Large">Large</label> <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>토핑 선택</legend>
+            <input type ="checkbox" name="토핑" value="베이컨" id="베이컨"> 
+            <label for="베이컨">베이컨</label> <br><br>
+            <input type ="checkbox" name="토핑" value="치즈" id="치즈"> 
+            <label for="치즈">치즈</label> <br><br>
+            <input type ="checkbox" name="토핑" value="양파" id="양파"> 
+            <label for="양파">양파</label> <br><br>
+            <input type ="checkbox" name="토핑" value="버섯" id="버섯"> 
+            <label for="버섯">버섯</label> <br><br>
+        </fieldset>
+        <br>
+        <label for="배송시간">희망배송시간 :</label>
+        <input type="time" name="배송시간" id="배송시간"><br><br>
+
+        <label for="요청사항">희망배송시간 :</label>
+        <textarea style="resize:none;" rows="3" cols="20" name="요청사항" id="요청사항">
+        </textarea>
+        <br><br>
+        <button>주문하기</button>
+    </form>
+
+
+     
+</body>
+</html>

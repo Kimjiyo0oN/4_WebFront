@@ -1,0 +1,31 @@
+/* 4순위 : 클래스 선택자 */
+.box{
+    background-color: green !important;
+    /* 배경색은 우선 순위에 의해서 green으로 변하지만
+    CSS 속성이 겹치지 않는 width,height는 그대로 반영됨.
+     */
+}
+
+/* 5 순위 : 태그 선택자 */
+div{
+    width: 200px;
+    height: 200px;
+    background-color: yellow !important; /* 1순위: !important; 붙은 css 속성 */
+}
+
+
+/* 4순위 : 클래스 선택자 */
+.box{
+    background-color: pink ;
+    /* 동일한 선택자로 작성된 CSS속성은 마지막 설정 값이 적용된다.
+     */
+}
+
+/* 3순위 : 아이디 선택자 */
+#test1{
+    background-color: red;
+    color: white;
+    height: 100px;
+}
+
+

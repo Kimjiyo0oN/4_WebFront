@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_HTML실습문제_2</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>납품자 정보</legend>
+            <br>
+            <label for ="납품자명">1. 납품자명 : </label>
+            <input type="name" name="납품자명" id="납품자명">
+            <br><br>
+
+            <label for ="email">2. email : </label>
+            <input type="name" name="email" id="email" placeholder="answer@naver.com">
+            <br><br>
+
+            <label for ="홈페이지">3. 홈페이지 : </label>
+            <input type="url" value="http://" placeholder="홈페이지" name="홈페이지" id="홈페이지">
+            <br><br>
+
+            <label for ="지역">4. 지역 : </label>
+            <select name="지역" id="지역">
+                <option value="부산" selected>부산</option>
+                <option value="서울" >서울</option>
+                <option value="대구" >대구</option>
+                <option value="울산" >울산</option>
+            </select>
+            <br><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>납품 정보</legend>
+            <ul>
+                <li>
+                    <label for ="상품명"> 상품명 : </label>
+                    <input type="name" name="상품명" id="상품명">
+                </li>
+                <br>
+                <li>
+                    <label for ="수량"> 납품수량 : </label>
+                    <input type="number" name="수량" id="수량" min="100" placeholder="최소 100">
+                </li>
+                <br>
+                <li>
+                    <label for ="등급"> 납품등급 : </label>
+                    <input type="range" name="등급" id="등급">
+                </li>
+                <br>
+                <li>
+                    <label for ="기타"> 기타사항 :</label>
+                    <textarea style="resize:none;" rows="5" cols="20" name="기타" id="기타"></textarea>
+                </li>
+                <br>
+            </ul>
+        </fieldset>
+        <br>
+        <button>send message</button>
+    </form>
+</body>
+</html>

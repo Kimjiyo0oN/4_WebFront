@@ -1,0 +1,23 @@
+div{
+    border :1px solid black;
+    box-sizing: border-box; /* w/h가 padding + border + content의 합 
+                                                        -> content가 자동 조정됨*/
+}
+
+.test{
+    width: 300px;
+    height: 200px;
+    background-color: #ddd;
+}
+.left{
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+
+    float: left;
+}
+
+.clear{
+    clear :left;
+    /* float : left 상태를 해제 */
+}

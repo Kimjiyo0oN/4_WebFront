@@ -1,0 +1,26 @@
+.container1{
+    border: 2px solid black;
+    width: 300px;
+
+}
+/* 요소를 정가운데 배치하기
+
+    1) 감싸는 요소가 position : relative;
+    2) 배치될 요소가 position : absolute;
+    3) 배치될 요소를 사방으로 잡아 당김 
+        (top, bottom, left, right)
+    4)                                                                                                                                                                                                                                                                                                                                                                           
+    */
+#sticky-title{
+    margin: 0;
+    background-color: violet;
+    color: white;
+
+    padding: 40px 20px 20px;
+
+    position: sticky;
+    top: 0px;
+
+    z-index: 100;
+
+}
