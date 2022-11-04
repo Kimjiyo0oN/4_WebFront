@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_간이 계산기</title>
+</head>
+<body>
+    <h1>간이 계산기 만들기</h1>
+
+    첫 번째 값 : <input type="number" id="input1" required><br>
+    두 번째 값 : <input type="number" id="input2" required><br>
+
+
+    <!-- <button onclick="tol('+')">+</button>
+    <button onclick="tol('-')">-</button>
+    <button onclick="tol('*')">*</button>
+    <button onclick="tol('/')">/</button>
+    <button onclick="tol('%')">%</button> -->
+
+    <!-- 여기서 this ==  클릭이 된 버튼이 나타내는 요소 -->
+    <button onclick="tol(this)">+</button> 
+    <button onclick="tol(this)">-</button>
+    <button onclick="tol(this)">*</button>
+    <button onclick="tol(this)">/</button>
+    <button onclick="tol(this)">%</button>
+
+    <!-- <button id="p" onclick="plus()">+</button>
+    <button id="m" onclick="minus()">-</button>
+    <button id="mu" onclick="mul()">*</button>
+    <button id="d" onclick="div()">/</button>
+    <button id="r" onclick="rem()">%</button> -->
+    <br><br>
+
+    계산 결과 : <span></span>
+
+    <script src="../js/05_간이계산기1.js"></script>
+</body>
+</html>
